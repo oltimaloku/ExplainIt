@@ -10,6 +10,8 @@ import Foundation
 class ConceptViewModel: ObservableObject {
     @Published var userInput: String = ""
     @Published var feedbackSegments: [FeedbackSegment] = []
+    @Published var selectedSegment: FeedbackSegment?
+    @Published var showingFeedbackPopup = false
     
     @Published var isLoading: Bool = false
     
