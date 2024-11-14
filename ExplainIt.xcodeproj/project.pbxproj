@@ -8,21 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		DD87B09C2CDD65B300FEACC7 /* ExplainItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B09B2CDD65B300FEACC7 /* ExplainItApp.swift */; };
-		DD87B09E2CDD65B300FEACC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B09D2CDD65B300FEACC7 /* ContentView.swift */; };
 		DD87B0A02CDD65B400FEACC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD87B09F2CDD65B400FEACC7 /* Assets.xcassets */; };
 		DD87B0A32CDD65B400FEACC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD87B0A22CDD65B400FEACC7 /* Preview Assets.xcassets */; };
 		DD87B0AA2CDD664F00FEACC7 /* FeedbackSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0A92CDD664F00FEACC7 /* FeedbackSegment.swift */; };
-		DD87B0AD2CDD670700FEACC7 /* ConceptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0AC2CDD670700FEACC7 /* ConceptViewModel.swift */; };
+		DD87B0AF2CE1AFDA00FEACC7 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0AE2CE1AFDA00FEACC7 /* ChatViewModel.swift */; };
+		DD87B0B22CE1B06000FEACC7 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0B12CE1B06000FEACC7 /* ChatView.swift */; };
+		DD87B0B42CE1B0C600FEACC7 /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0B32CE1B0C600FEACC7 /* MessageBubbleView.swift */; };
+		DD87B0B72CE1B15D00FEACC7 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0B62CE1B15D00FEACC7 /* OpenAIService.swift */; };
+		DD87B0B92CE1B17400FEACC7 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0B82CE1B17400FEACC7 /* Secrets.swift */; };
+		DD87B0BB2CE1B1AB00FEACC7 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0BA2CE1B1AB00FEACC7 /* Chat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD87B0982CDD65B300FEACC7 /* ExplainIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExplainIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD87B09B2CDD65B300FEACC7 /* ExplainItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainItApp.swift; sourceTree = "<group>"; };
-		DD87B09D2CDD65B300FEACC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DD87B09F2CDD65B400FEACC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD87B0A22CDD65B400FEACC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DD87B0A92CDD664F00FEACC7 /* FeedbackSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackSegment.swift; sourceTree = "<group>"; };
-		DD87B0AC2CDD670700FEACC7 /* ConceptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptViewModel.swift; sourceTree = "<group>"; };
+		DD87B0AE2CE1AFDA00FEACC7 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		DD87B0B12CE1B06000FEACC7 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		DD87B0B32CE1B0C600FEACC7 /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
+		DD87B0B62CE1B15D00FEACC7 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
+		DD87B0B82CE1B17400FEACC7 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		DD87B0BA2CE1B1AB00FEACC7 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +63,14 @@
 		DD87B09A2CDD65B300FEACC7 /* ExplainIt */ = {
 			isa = PBXGroup;
 			children = (
-				DD87B0AB2CDD665200FEACC7 /* Model */,
+				DD87B0B52CE1B14800FEACC7 /* Services */,
+				DD87B0B02CE1B03A00FEACC7 /* Views */,
+				DD87B0AB2CDD665200FEACC7 /* Models */,
 				DD87B09B2CDD65B300FEACC7 /* ExplainItApp.swift */,
-				DD87B09D2CDD65B300FEACC7 /* ContentView.swift */,
 				DD87B09F2CDD65B400FEACC7 /* Assets.xcassets */,
 				DD87B0A12CDD65B400FEACC7 /* Preview Content */,
-				DD87B0AC2CDD670700FEACC7 /* ConceptViewModel.swift */,
+				DD87B0AE2CE1AFDA00FEACC7 /* ChatViewModel.swift */,
+				DD87B0B82CE1B17400FEACC7 /* Secrets.swift */,
 			);
 			path = ExplainIt;
 			sourceTree = "<group>";
@@ -73,12 +83,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		DD87B0AB2CDD665200FEACC7 /* Model */ = {
+		DD87B0AB2CDD665200FEACC7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				DD87B0A92CDD664F00FEACC7 /* FeedbackSegment.swift */,
+				DD87B0BA2CE1B1AB00FEACC7 /* Chat.swift */,
 			);
-			path = Model;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD87B0B02CE1B03A00FEACC7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD87B0B12CE1B06000FEACC7 /* ChatView.swift */,
+				DD87B0B32CE1B0C600FEACC7 /* MessageBubbleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD87B0B52CE1B14800FEACC7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DD87B0B62CE1B15D00FEACC7 /* OpenAIService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD87B09E2CDD65B300FEACC7 /* ContentView.swift in Sources */,
-				DD87B0AD2CDD670700FEACC7 /* ConceptViewModel.swift in Sources */,
+				DD87B0B92CE1B17400FEACC7 /* Secrets.swift in Sources */,
+				DD87B0BB2CE1B1AB00FEACC7 /* Chat.swift in Sources */,
 				DD87B09C2CDD65B300FEACC7 /* ExplainItApp.swift in Sources */,
+				DD87B0B72CE1B15D00FEACC7 /* OpenAIService.swift in Sources */,
+				DD87B0AF2CE1AFDA00FEACC7 /* ChatViewModel.swift in Sources */,
+				DD87B0B22CE1B06000FEACC7 /* ChatView.swift in Sources */,
+				DD87B0B42CE1B0C600FEACC7 /* MessageBubbleView.swift in Sources */,
 				DD87B0AA2CDD664F00FEACC7 /* FeedbackSegment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +328,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +358,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
