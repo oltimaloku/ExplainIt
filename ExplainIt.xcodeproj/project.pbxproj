@@ -10,13 +10,17 @@
 		DD87B09C2CDD65B300FEACC7 /* ExplainItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B09B2CDD65B300FEACC7 /* ExplainItApp.swift */; };
 		DD87B0A02CDD65B400FEACC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD87B09F2CDD65B400FEACC7 /* Assets.xcassets */; };
 		DD87B0A32CDD65B400FEACC7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD87B0A22CDD65B400FEACC7 /* Preview Assets.xcassets */; };
-		DD87B0AA2CDD664F00FEACC7 /* FeedbackSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0A92CDD664F00FEACC7 /* FeedbackSegment.swift */; };
+		DD87B0AA2CDD664F00FEACC7 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0A92CDD664F00FEACC7 /* Feedback.swift */; };
 		DD87B0AF2CE1AFDA00FEACC7 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0AE2CE1AFDA00FEACC7 /* ChatViewModel.swift */; };
 		DD87B0B22CE1B06000FEACC7 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0B12CE1B06000FEACC7 /* ChatView.swift */; };
 		DD87B0B42CE1B0C600FEACC7 /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0B32CE1B0C600FEACC7 /* MessageBubbleView.swift */; };
 		DD87B0B72CE1B15D00FEACC7 /* OpenAIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0B62CE1B15D00FEACC7 /* OpenAIService.swift */; };
 		DD87B0B92CE1B17400FEACC7 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0B82CE1B17400FEACC7 /* Secrets.swift */; };
 		DD87B0BB2CE1B1AB00FEACC7 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0BA2CE1B1AB00FEACC7 /* Chat.swift */; };
+		DD87B0BF2CE7E95F00FEACC7 /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0BE2CE7E95F00FEACC7 /* PromptView.swift */; };
+		DD87B0C22CE7EBEC00FEACC7 /* EITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0C12CE7EBEC00FEACC7 /* EITextField.swift */; };
+		DD87B0C42CE7EFE600FEACC7 /* ConceptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0C32CE7EFE600FEACC7 /* ConceptView.swift */; };
+		DD87B0C62CE7F28900FEACC7 /* IconBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0C52CE7F28900FEACC7 /* IconBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,13 +28,17 @@
 		DD87B09B2CDD65B300FEACC7 /* ExplainItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainItApp.swift; sourceTree = "<group>"; };
 		DD87B09F2CDD65B400FEACC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD87B0A22CDD65B400FEACC7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DD87B0A92CDD664F00FEACC7 /* FeedbackSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackSegment.swift; sourceTree = "<group>"; };
+		DD87B0A92CDD664F00FEACC7 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		DD87B0AE2CE1AFDA00FEACC7 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		DD87B0B12CE1B06000FEACC7 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		DD87B0B32CE1B0C600FEACC7 /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
 		DD87B0B62CE1B15D00FEACC7 /* OpenAIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIService.swift; sourceTree = "<group>"; };
 		DD87B0B82CE1B17400FEACC7 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		DD87B0BA2CE1B1AB00FEACC7 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		DD87B0BE2CE7E95F00FEACC7 /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
+		DD87B0C12CE7EBEC00FEACC7 /* EITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EITextField.swift; sourceTree = "<group>"; };
+		DD87B0C32CE7EFE600FEACC7 /* ConceptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptView.swift; sourceTree = "<group>"; };
+		DD87B0C52CE7F28900FEACC7 /* IconBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 		DD87B09A2CDD65B300FEACC7 /* ExplainIt */ = {
 			isa = PBXGroup;
 			children = (
+				DD87B0C02CE7EBDB00FEACC7 /* Common */,
 				DD87B0B52CE1B14800FEACC7 /* Services */,
 				DD87B0B02CE1B03A00FEACC7 /* Views */,
 				DD87B0AB2CDD665200FEACC7 /* Models */,
@@ -71,6 +80,8 @@
 				DD87B0A12CDD65B400FEACC7 /* Preview Content */,
 				DD87B0AE2CE1AFDA00FEACC7 /* ChatViewModel.swift */,
 				DD87B0B82CE1B17400FEACC7 /* Secrets.swift */,
+				DD87B0BE2CE7E95F00FEACC7 /* PromptView.swift */,
+				DD87B0C32CE7EFE600FEACC7 /* ConceptView.swift */,
 			);
 			path = ExplainIt;
 			sourceTree = "<group>";
@@ -86,7 +97,7 @@
 		DD87B0AB2CDD665200FEACC7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DD87B0A92CDD664F00FEACC7 /* FeedbackSegment.swift */,
+				DD87B0A92CDD664F00FEACC7 /* Feedback.swift */,
 				DD87B0BA2CE1B1AB00FEACC7 /* Chat.swift */,
 			);
 			path = Models;
@@ -107,6 +118,15 @@
 				DD87B0B62CE1B15D00FEACC7 /* OpenAIService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		DD87B0C02CE7EBDB00FEACC7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DD87B0C12CE7EBEC00FEACC7 /* EITextField.swift */,
+				DD87B0C52CE7F28900FEACC7 /* IconBox.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,13 +200,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD87B0B92CE1B17400FEACC7 /* Secrets.swift in Sources */,
+				DD87B0C22CE7EBEC00FEACC7 /* EITextField.swift in Sources */,
+				DD87B0C62CE7F28900FEACC7 /* IconBox.swift in Sources */,
 				DD87B0BB2CE1B1AB00FEACC7 /* Chat.swift in Sources */,
 				DD87B09C2CDD65B300FEACC7 /* ExplainItApp.swift in Sources */,
 				DD87B0B72CE1B15D00FEACC7 /* OpenAIService.swift in Sources */,
+				DD87B0BF2CE7E95F00FEACC7 /* PromptView.swift in Sources */,
 				DD87B0AF2CE1AFDA00FEACC7 /* ChatViewModel.swift in Sources */,
+				DD87B0C42CE7EFE600FEACC7 /* ConceptView.swift in Sources */,
 				DD87B0B22CE1B06000FEACC7 /* ChatView.swift in Sources */,
 				DD87B0B42CE1B0C600FEACC7 /* MessageBubbleView.swift in Sources */,
-				DD87B0AA2CDD664F00FEACC7 /* FeedbackSegment.swift in Sources */,
+				DD87B0AA2CDD664F00FEACC7 /* Feedback.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

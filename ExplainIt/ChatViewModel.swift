@@ -43,11 +43,15 @@ class ChatViewModel: ObservableObject {
                 feedbackSegments.append(contentsOf: sentenceSegments)
             }
             
+            let overallGrade = calculateOverallGrade(for: feedbackSegments)
+            
+            let feedbackAnalysis = FeedbackAnalysis(segments: feedbackSegments, overallGrade: overallGrade)
+            
             let aiMessage = ChatMessage(
                 text: inputText,
                 isUserMessage: false,
                 timestamp: Date(),
-                feedbackSegments: feedbackSegments
+                feedbackAnalysis: feedbackAnalysis
             )
             messages.append(aiMessage)
         } catch {
@@ -108,5 +112,13 @@ class ChatViewModel: ObservableObject {
             print("Error parsing response")
             return []
         }
+    }
+    
+    private func calculateOverallGrade(for segments: [FeedbackSegment]) -> Double {
+        let correctCount = segments.filter { $0.feedbackType == .correct }.count
+        let totalCount = segments.count
+        
+        // Example grading logic based on the percentage of correct segments
+        return (Double(correctCount) / Double(totalCount)) * 100
     }
 }

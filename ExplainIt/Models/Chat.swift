@@ -12,16 +12,16 @@ struct ChatMessage: Identifiable {
     let text: String
     let isUserMessage: Bool
     let timestamp: Date
-    var isError: Bool = false
-    var feedbackSegments: [FeedbackSegment] = []
+    let feedbackAnalysis: FeedbackAnalysis?  
+    let isError: Bool
     
-    init(text: String, isUserMessage: Bool, timestamp: Date, isError: Bool = false, feedbackSegments: [FeedbackSegment] = []) {
-            self.text = text
-            self.isUserMessage = isUserMessage
-            self.timestamp = timestamp
-            self.isError = isError
-            self.feedbackSegments = feedbackSegments
-        }
+    init(text: String, isUserMessage: Bool, timestamp: Date, feedbackAnalysis: FeedbackAnalysis? = nil, isError: Bool = false) {
+        self.text = text
+        self.isUserMessage = isUserMessage
+        self.timestamp = timestamp
+        self.feedbackAnalysis = feedbackAnalysis
+        self.isError = isError
+    }
 }
 
 struct ELI5Response: Decodable {

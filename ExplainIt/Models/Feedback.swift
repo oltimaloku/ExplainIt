@@ -1,5 +1,11 @@
 import SwiftUI
 
+struct FeedbackAnalysis: Identifiable {
+    let id = UUID()
+    let segments: [FeedbackSegment]
+    let overallGrade: Double
+}
+
 struct FeedbackSegment: Identifiable, Decodable {
     let id: UUID
     let text: String

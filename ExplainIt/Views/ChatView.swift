@@ -10,21 +10,6 @@ struct ChatView: View {
                 messagesList
                 inputArea
             }
-            
-//            Button(action: {
-//                print("Wand button tapped!")
-//            }) {
-//                Image(systemName: "wand.and.rays")
-//                    .resizable()
-//                    .frame(width: 25, height: 25)
-//                    .foregroundColor(.white)
-//                    .padding()
-//                    .background(Color.blue)
-//                    .clipShape(Circle())
-//                    .shadow(radius: 10)
-//            }
-//            .padding(.trailing, 16)
-//            .padding(.top, 16)
         }
     }
     
@@ -33,10 +18,10 @@ struct ChatView: View {
             ScrollView {
                 LazyVStack(spacing: 12) {
                     ForEach(viewModel.messages) { message in
-                        if message.feedbackSegments.isEmpty {
-                            MessageBubbleView(message: message)
+                        if let feedbackAnalysis = message.feedbackAnalysis {
+                            FeedbackMessageView(feedbackAnalysis: feedbackAnalysis)
                         } else {
-                            FeedbackMessageView(feedbackSegments: message.feedbackSegments)
+                            MessageBubbleView(message: message)
                         }
                     }
                     
@@ -60,13 +45,8 @@ struct ChatView: View {
     
     private var inputArea: some View {
         HStack(spacing: 12) {
-            TextField("Ask me anything...", text: $viewModel.inputText)
-                .padding(10)
-                .background(
-                    RoundedRectangle(cornerRadius: 25)
-                        .fill(Color(.systemGray6))
-                )
-                .focused($isFocused)
+            EITextField(text: $viewModel.inputText, placeholder: "Ask me anything...")
+               
            
             Button {
                 Task {
@@ -87,17 +67,40 @@ struct ChatView: View {
 }
 
 struct FeedbackMessageView: View {
-    let feedbackSegments: [FeedbackSegment]
+    let feedbackAnalysis: FeedbackAnalysis
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
-            ForEach(feedbackSegments) { segment in
+            HStack {
+                    Spacer() // Pushes the text to the right
+                    Text("\(Int(feedbackAnalysis.overallGrade * 100))%")
+                        .font(.headline)
+                        .padding(.bottom, 4)
+                        .foregroundColor(getPercentageColour(percent: feedbackAnalysis.overallGrade))
+            }
+            
+            ForEach(feedbackAnalysis.segments) { segment in
                 FeedbackSegmentView(segment: segment)
             }
         }
         .padding()
         .background(Color(.secondarySystemBackground))
         .cornerRadius(12)
+    }
+    
+    private func getPercentageColour(percent: Double) -> Color{
+        switch percent {
+        case ..<0.5:
+            return .red
+        case 0.5..<0.75:
+            return .orange
+        case 0.75...0.95:
+            return Color(red: 218/255, green: 165/255, blue: 32/255)
+        case 0.95...1:
+            return .green
+        default:
+            return .gray
+        }
     }
 }
 
@@ -120,61 +123,43 @@ struct FeedbackSegmentView: View {
                         .padding()
                         .frame(maxWidth: 200)
                 }
-                
             }
     }
 }
 
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {
+        let mockSegments = [
+            FeedbackSegment(
+                text: "Photosynthesis is a process that plants use",
+                feedbackType: .correct,
+                explanation: "Correct understanding that photosynthesis is a process used by plants.",
+                concept: "Photosynthesis"
+            ),
+            FeedbackSegment(
+                text: "to eat food from the soil.",
+                feedbackType: .incorrect,
+                explanation: "Incorrect. Photosynthesis involves producing food from sunlight, not eating from the soil.",
+                concept: "Photosynthesis Process"
+            )
+        ]
+        
+        let mockFeedbackAnalysis = FeedbackAnalysis(
+            segments: mockSegments,
+            overallGrade: 0.4
+        )
+        
         let mockMessages = [
             ChatMessage(
                 text: "Testing AI feedback",
                 isUserMessage: false,
                 timestamp: Date(),
-                feedbackSegments: [
-                    FeedbackSegment(
-                        text: "Photosynthesis is a process that plants use",
-                        feedbackType: .correct,
-                        explanation: "Correct understanding that photosynthesis is a process used by plants.",
-                        concept: "Photosynthesis"
-                    ),
-                    FeedbackSegment(
-                        text: "to eat food from the soil.",
-                        feedbackType: .incorrect,
-                        explanation: "Incorrect. Photosynthesis involves producing food from sunlight, not eating from the soil.",
-                        concept: "Photosynthesis Process"
-                    ),
-                    FeedbackSegment(
-                        text: "Plants take in water through their roots",
-                        feedbackType: .correct,
-                        explanation: "Accurate statement about how plants absorb water.",
-                        concept: "Plant Water Absorption"
-                    ),
-                    FeedbackSegment(
-                        text: "and sunlight through their leaves.",
-                        feedbackType: .correct,
-                        explanation: "Correct that sunlight is absorbed through the leaves.",
-                        concept: "Photosynthesis Process"
-                    ),
-                    FeedbackSegment(
-                        text: "They use their blood to turn sunlight into energy.",
-                        feedbackType: .incorrect,
-                        explanation: "Incorrect. Plants do not have blood. They use chlorophyll in their leaves for this process.",
-                        concept: "Plant Anatomy"
-                    ),
-                    FeedbackSegment(
-                        text: "This process releases oxygen into the air as a byproduct.",
-                        feedbackType: .partiallyCorrect,
-                        explanation: "Partially correct. Oxygen is indeed released, but not as a waste product; it's a byproduct of splitting water molecules.",
-                        concept: "Photosynthesis Byproducts"
-                    )
-                ]
+                feedbackAnalysis: mockFeedbackAnalysis
             )
         ]
         
         let viewModel = ChatViewModel(mockMessages: mockMessages)
         
-        return ChatView(viewModel: viewModel) // Pass viewModel to ChatView
+        return ChatView(viewModel: viewModel)
     }
 }
