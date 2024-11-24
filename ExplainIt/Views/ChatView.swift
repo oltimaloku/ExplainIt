@@ -66,66 +66,7 @@ struct ChatView: View {
     }
 }
 
-struct FeedbackMessageView: View {
-    let feedbackAnalysis: FeedbackAnalysis
-    
-    var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack {
-                    Spacer() // Pushes the text to the right
-                    Text("\(Int(feedbackAnalysis.overallGrade * 100))%")
-                        .font(.headline)
-                        .padding(.bottom, 4)
-                        .foregroundColor(getPercentageColour(percent: feedbackAnalysis.overallGrade))
-            }
-            
-            ForEach(feedbackAnalysis.segments) { segment in
-                FeedbackSegmentView(segment: segment)
-            }
-        }
-        .padding()
-        .background(Color(.secondarySystemBackground))
-        .cornerRadius(12)
-    }
-    
-    private func getPercentageColour(percent: Double) -> Color{
-        switch percent {
-        case ..<0.5:
-            return .red
-        case 0.5..<0.75:
-            return .orange
-        case 0.75...0.95:
-            return Color(red: 218/255, green: 165/255, blue: 32/255)
-        case 0.95...1:
-            return .green
-        default:
-            return .gray
-        }
-    }
-}
 
-struct FeedbackSegmentView: View {
-    let segment: FeedbackSegment
-    @State private var showExplanation = false
-    
-    var body: some View {
-        Text(segment.text)
-            .padding(6)
-            .background(segment.feedbackType.color)
-            .cornerRadius(8)
-            .onTapGesture {
-                showExplanation.toggle()
-            }
-            .popover(isPresented: $showExplanation) {
-                VStack {
-                    Text(segment.concept).bold()
-                    Text(segment.explanation)
-                        .padding()
-                        .frame(maxWidth: 200)
-                }
-            }
-    }
-}
 
 struct ChatView_Previews: PreviewProvider {
     static var previews: some View {

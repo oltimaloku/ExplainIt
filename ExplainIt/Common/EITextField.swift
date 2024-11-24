@@ -11,26 +11,26 @@ struct EITextField: View {
     @Binding var text: String
     var placeholder: String
     var cornerRadius: CGFloat = 25
-    var backgroundColor: Color = Color(.white)
     var padding: CGFloat = 10
     var icon: String = "magnifyingglass"
     
     var body: some View {
         HStack {
-            Image(systemName: icon).foregroundColor(.gray)
+            Image(systemName: icon)
+                .foregroundStyle(.secondary) // More adaptive than .gray
             TextField(placeholder, text: $text)
                 .padding(.vertical, padding)
-                
+                .textFieldStyle(PlainTextFieldStyle())
         }
         .padding(.horizontal, padding)
         .background(
             RoundedRectangle(cornerRadius: cornerRadius)
-                 .fill(backgroundColor)
-            )
-        .overlay(
-            RoundedRectangle(cornerRadius: cornerRadius).stroke(Color(.systemGray5), lineWidth: 1)
+                .fill(Color(uiColor: .secondarySystemBackground))
         )
-        
+        .overlay(
+            RoundedRectangle(cornerRadius: cornerRadius)
+                .stroke(Color(uiColor: .separator), lineWidth: 1)
+        )
     }
 }
 

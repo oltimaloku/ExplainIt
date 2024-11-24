@@ -19,8 +19,21 @@
 		DD87B0BB2CE1B1AB00FEACC7 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0BA2CE1B1AB00FEACC7 /* Chat.swift */; };
 		DD87B0BF2CE7E95F00FEACC7 /* PromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0BE2CE7E95F00FEACC7 /* PromptView.swift */; };
 		DD87B0C22CE7EBEC00FEACC7 /* EITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0C12CE7EBEC00FEACC7 /* EITextField.swift */; };
-		DD87B0C42CE7EFE600FEACC7 /* ConceptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0C32CE7EFE600FEACC7 /* ConceptView.swift */; };
+		DD87B0C42CE7EFE600FEACC7 /* TopicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0C32CE7EFE600FEACC7 /* TopicCard.swift */; };
 		DD87B0C62CE7F28900FEACC7 /* IconBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0C52CE7F28900FEACC7 /* IconBox.swift */; };
+		DD87B0C82CE8032B00FEACC7 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0C72CE8032B00FEACC7 /* Topic.swift */; };
+		DD87B0CA2CE803EB00FEACC7 /* Concept.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0C92CE803EB00FEACC7 /* Concept.swift */; };
+		DD87B0CE2CE81DBF00FEACC7 /* SpeechRecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0CD2CE81DBF00FEACC7 /* SpeechRecognitionView.swift */; };
+		DD87B0D02CE81F7A00FEACC7 /* SpeechRecognitionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0CF2CE81F7A00FEACC7 /* SpeechRecognitionService.swift */; };
+		DD87B0D32CEC8C1D00FEACC7 /* LearnOrExplain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0D22CEC8C1D00FEACC7 /* LearnOrExplain.swift */; };
+		DD87B0D72CEFB35900FEACC7 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0D62CEFB35900FEACC7 /* LearnView.swift */; };
+		DD87B0DA2CEFB37200FEACC7 /* ExplainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0D92CEFB37200FEACC7 /* ExplainView.swift */; };
+		DD87B0DC2CEFB68B00FEACC7 /* ExplainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0DB2CEFB68B00FEACC7 /* ExplainViewModel.swift */; };
+		DD87B0DE2CF194EF00FEACC7 /* FeedbackModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0DD2CF194EF00FEACC7 /* FeedbackModal.swift */; };
+		DD87B0E02CF19B2B00FEACC7 /* FeedbackMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0DF2CF19B2B00FEACC7 /* FeedbackMessageView.swift */; };
+		DD87B0E32CF19DD500FEACC7 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = DD87B0E22CF19DD500FEACC7 /* MarkdownUI */; };
+		DD87B0E62CF284DC00FEACC7 /* TopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0E52CF284DC00FEACC7 /* TopicView.swift */; };
+		DD87B0E82CF2CEEE00FEACC7 /* ConceptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B0E72CF2CEEE00FEACC7 /* ConceptView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,8 +50,21 @@
 		DD87B0BA2CE1B1AB00FEACC7 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		DD87B0BE2CE7E95F00FEACC7 /* PromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptView.swift; sourceTree = "<group>"; };
 		DD87B0C12CE7EBEC00FEACC7 /* EITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EITextField.swift; sourceTree = "<group>"; };
-		DD87B0C32CE7EFE600FEACC7 /* ConceptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptView.swift; sourceTree = "<group>"; };
+		DD87B0C32CE7EFE600FEACC7 /* TopicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCard.swift; sourceTree = "<group>"; };
 		DD87B0C52CE7F28900FEACC7 /* IconBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconBox.swift; sourceTree = "<group>"; };
+		DD87B0C72CE8032B00FEACC7 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		DD87B0C92CE803EB00FEACC7 /* Concept.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concept.swift; sourceTree = "<group>"; };
+		DD87B0CD2CE81DBF00FEACC7 /* SpeechRecognitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionView.swift; sourceTree = "<group>"; };
+		DD87B0CF2CE81F7A00FEACC7 /* SpeechRecognitionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognitionService.swift; sourceTree = "<group>"; };
+		DD87B0D12CE8209400FEACC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DD87B0D22CEC8C1D00FEACC7 /* LearnOrExplain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnOrExplain.swift; sourceTree = "<group>"; };
+		DD87B0D62CEFB35900FEACC7 /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
+		DD87B0D92CEFB37200FEACC7 /* ExplainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainView.swift; sourceTree = "<group>"; };
+		DD87B0DB2CEFB68B00FEACC7 /* ExplainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplainViewModel.swift; sourceTree = "<group>"; };
+		DD87B0DD2CF194EF00FEACC7 /* FeedbackModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackModal.swift; sourceTree = "<group>"; };
+		DD87B0DF2CF19B2B00FEACC7 /* FeedbackMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackMessageView.swift; sourceTree = "<group>"; };
+		DD87B0E52CF284DC00FEACC7 /* TopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicView.swift; sourceTree = "<group>"; };
+		DD87B0E72CF2CEEE00FEACC7 /* ConceptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD87B0E32CF19DD500FEACC7 /* MarkdownUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +98,8 @@
 		DD87B09A2CDD65B300FEACC7 /* ExplainIt */ = {
 			isa = PBXGroup;
 			children = (
+				DD87B0D42CEFB33600FEACC7 /* Features */,
+				DD87B0D12CE8209400FEACC7 /* Info.plist */,
 				DD87B0C02CE7EBDB00FEACC7 /* Common */,
 				DD87B0B52CE1B14800FEACC7 /* Services */,
 				DD87B0B02CE1B03A00FEACC7 /* Views */,
@@ -80,8 +109,7 @@
 				DD87B0A12CDD65B400FEACC7 /* Preview Content */,
 				DD87B0AE2CE1AFDA00FEACC7 /* ChatViewModel.swift */,
 				DD87B0B82CE1B17400FEACC7 /* Secrets.swift */,
-				DD87B0BE2CE7E95F00FEACC7 /* PromptView.swift */,
-				DD87B0C32CE7EFE600FEACC7 /* ConceptView.swift */,
+				DD87B0C32CE7EFE600FEACC7 /* TopicCard.swift */,
 			);
 			path = ExplainIt;
 			sourceTree = "<group>";
@@ -99,6 +127,8 @@
 			children = (
 				DD87B0A92CDD664F00FEACC7 /* Feedback.swift */,
 				DD87B0BA2CE1B1AB00FEACC7 /* Chat.swift */,
+				DD87B0C72CE8032B00FEACC7 /* Topic.swift */,
+				DD87B0C92CE803EB00FEACC7 /* Concept.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -106,8 +136,13 @@
 		DD87B0B02CE1B03A00FEACC7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DD87B0BE2CE7E95F00FEACC7 /* PromptView.swift */,
 				DD87B0B12CE1B06000FEACC7 /* ChatView.swift */,
 				DD87B0B32CE1B0C600FEACC7 /* MessageBubbleView.swift */,
+				DD87B0CD2CE81DBF00FEACC7 /* SpeechRecognitionView.swift */,
+				DD87B0D22CEC8C1D00FEACC7 /* LearnOrExplain.swift */,
+				DD87B0DD2CF194EF00FEACC7 /* FeedbackModal.swift */,
+				DD87B0DF2CF19B2B00FEACC7 /* FeedbackMessageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				DD87B0B62CE1B15D00FEACC7 /* OpenAIService.swift */,
+				DD87B0CF2CE81F7A00FEACC7 /* SpeechRecognitionService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -127,6 +163,42 @@
 				DD87B0C52CE7F28900FEACC7 /* IconBox.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		DD87B0D42CEFB33600FEACC7 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				DD87B0E42CF2844D00FEACC7 /* Concepts */,
+				DD87B0D82CEFB35E00FEACC7 /* Explain */,
+				DD87B0D52CEFB34900FEACC7 /* Learn */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		DD87B0D52CEFB34900FEACC7 /* Learn */ = {
+			isa = PBXGroup;
+			children = (
+				DD87B0D62CEFB35900FEACC7 /* LearnView.swift */,
+			);
+			path = Learn;
+			sourceTree = "<group>";
+		};
+		DD87B0D82CEFB35E00FEACC7 /* Explain */ = {
+			isa = PBXGroup;
+			children = (
+				DD87B0D92CEFB37200FEACC7 /* ExplainView.swift */,
+				DD87B0DB2CEFB68B00FEACC7 /* ExplainViewModel.swift */,
+			);
+			path = Explain;
+			sourceTree = "<group>";
+		};
+		DD87B0E42CF2844D00FEACC7 /* Concepts */ = {
+			isa = PBXGroup;
+			children = (
+				DD87B0E52CF284DC00FEACC7 /* TopicView.swift */,
+				DD87B0E72CF2CEEE00FEACC7 /* ConceptView.swift */,
+			);
+			path = Concepts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +217,9 @@
 			dependencies = (
 			);
 			name = ExplainIt;
+			packageProductDependencies = (
+				DD87B0E22CF19DD500FEACC7 /* MarkdownUI */,
+			);
 			productName = ExplainIt;
 			productReference = DD87B0982CDD65B300FEACC7 /* ExplainIt.app */;
 			productType = "com.apple.product-type.application";
@@ -173,6 +248,9 @@
 				Base,
 			);
 			mainGroup = DD87B08F2CDD65B300FEACC7;
+			packageReferences = (
+				DD87B0E12CF19DD500FEACC7 /* XCRemoteSwiftPackageReference "MarkdownUI" */,
+			);
 			productRefGroup = DD87B0992CDD65B300FEACC7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -201,15 +279,27 @@
 			files = (
 				DD87B0B92CE1B17400FEACC7 /* Secrets.swift in Sources */,
 				DD87B0C22CE7EBEC00FEACC7 /* EITextField.swift in Sources */,
+				DD87B0CA2CE803EB00FEACC7 /* Concept.swift in Sources */,
 				DD87B0C62CE7F28900FEACC7 /* IconBox.swift in Sources */,
+				DD87B0D72CEFB35900FEACC7 /* LearnView.swift in Sources */,
 				DD87B0BB2CE1B1AB00FEACC7 /* Chat.swift in Sources */,
 				DD87B09C2CDD65B300FEACC7 /* ExplainItApp.swift in Sources */,
+				DD87B0E62CF284DC00FEACC7 /* TopicView.swift in Sources */,
+				DD87B0DC2CEFB68B00FEACC7 /* ExplainViewModel.swift in Sources */,
 				DD87B0B72CE1B15D00FEACC7 /* OpenAIService.swift in Sources */,
+				DD87B0E02CF19B2B00FEACC7 /* FeedbackMessageView.swift in Sources */,
 				DD87B0BF2CE7E95F00FEACC7 /* PromptView.swift in Sources */,
 				DD87B0AF2CE1AFDA00FEACC7 /* ChatViewModel.swift in Sources */,
-				DD87B0C42CE7EFE600FEACC7 /* ConceptView.swift in Sources */,
+				DD87B0D32CEC8C1D00FEACC7 /* LearnOrExplain.swift in Sources */,
+				DD87B0C42CE7EFE600FEACC7 /* TopicCard.swift in Sources */,
+				DD87B0CE2CE81DBF00FEACC7 /* SpeechRecognitionView.swift in Sources */,
+				DD87B0DE2CF194EF00FEACC7 /* FeedbackModal.swift in Sources */,
 				DD87B0B22CE1B06000FEACC7 /* ChatView.swift in Sources */,
+				DD87B0C82CE8032B00FEACC7 /* Topic.swift in Sources */,
+				DD87B0E82CF2CEEE00FEACC7 /* ConceptView.swift in Sources */,
 				DD87B0B42CE1B0C600FEACC7 /* MessageBubbleView.swift in Sources */,
+				DD87B0DA2CEFB37200FEACC7 /* ExplainView.swift in Sources */,
+				DD87B0D02CE81F7A00FEACC7 /* SpeechRecognitionService.swift in Sources */,
 				DD87B0AA2CDD664F00FEACC7 /* Feedback.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +437,7 @@
 				DEVELOPMENT_TEAM = A3FSPGZQK8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExplainIt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -377,6 +468,7 @@
 				DEVELOPMENT_TEAM = A3FSPGZQK8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ExplainIt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -418,6 +510,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DD87B0E12CF19DD500FEACC7 /* XCRemoteSwiftPackageReference "MarkdownUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/MarkdownUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DD87B0E22CF19DD500FEACC7 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD87B0E12CF19DD500FEACC7 /* XCRemoteSwiftPackageReference "MarkdownUI" */;
+			productName = MarkdownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD87B0902CDD65B300FEACC7 /* Project object */;
 }

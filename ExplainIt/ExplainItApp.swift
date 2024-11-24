@@ -11,7 +11,7 @@ import SwiftUI
 struct ExplainItApp: App {
     var body: some Scene {
         WindowGroup {
-            ChatView(viewModel: ChatViewModel())
+            PromptView()
         }
     }
 }

@@ -1,13 +1,31 @@
 {
-  "originHash" : "a018617adc85c15e94d8d3e853e8919bfabbca654f781c93bfcd33523a51bbc1",
+  "originHash" : "427e2f78970f33b38feca26c7986bebb5f56cf55a388a29b6bade958aaa6607e",
   "pins" : [
     {
-      "identity" : "jtapplecalendar",
+      "identity" : "markdownui",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/patchthecode/JTAppleCalendar",
+      "location" : "https://github.com/gonzalezreal/MarkdownUI",
       "state" : {
-        "revision" : "718f0ab68ba0fcd2bc134f6e9d30edc1b9b038e1",
-        "version" : "8.0.5"
+        "revision" : "5f613358148239d0292c0cef674a3c2314737f9e",
+        "version" : "2.4.1"
+      }
+    },
+    {
+      "identity" : "networkimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gonzalezreal/NetworkImage",
+      "state" : {
+        "revision" : "2849f5323265386e200484b0d0f896e73c3411b9",
+        "version" : "6.0.1"
+      }
+    },
+    {
+      "identity" : "swift-cmark",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-cmark",
+      "state" : {
+        "revision" : "3ccff77b2dc5b96b77db3da0d68d28068593fa53",
+        "version" : "0.5.0"
       }
     }
   ],

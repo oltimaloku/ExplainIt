@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct IconBox: View {
-    var iconName: String // Name of the SF Symbol
-    var boxSize: CGFloat = 50 // Size of the box
-    var iconSize: CGFloat = 20 // Size of the icon
-    var backgroundColor: Color = Color(.systemGray6) // Background color
-    var foregroundColor: Color = Color.primary // Icon color
+    var iconName: String
+    var boxSize: CGFloat = 50
+    var iconSize: CGFloat = 20
+    var backgroundColor: Color = Color(uiColor: .secondarySystemBackground)
+    var foregroundColor: Color = Color(uiColor: .label)
     
     var body: some View {
         ZStack {

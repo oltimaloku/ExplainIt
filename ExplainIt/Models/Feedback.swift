@@ -12,13 +12,15 @@ struct FeedbackSegment: Identifiable, Decodable {
     let feedbackType: FeedbackType
     let explanation: String
     let concept: String
+    let definition: String?
     
-    init(id: UUID = UUID(), text: String, feedbackType: FeedbackType, explanation: String, concept: String) {
+    init(id: UUID = UUID(), text: String, feedbackType: FeedbackType, explanation: String, concept: String, defintiion: String? = nil) {
             self.id = id
             self.text = text
             self.feedbackType = feedbackType
             self.explanation = explanation
             self.concept = concept
+        self.definition = defintiion
         }
     
     // Custom initializer for decoding
@@ -27,6 +29,7 @@ struct FeedbackSegment: Identifiable, Decodable {
         text = try container.decode(String.self, forKey: .text)
         explanation = try container.decode(String.self, forKey: .explanation)
         concept = try container.decode(String.self, forKey: .concept)
+        definition = try container.decodeIfPresent(String.self, forKey: .definition)
         
         // Decode `feedbackType` with a custom strategy
         let feedbackTypeString = try container.decode(String.self, forKey: .feedbackType)
@@ -50,6 +53,7 @@ struct FeedbackSegment: Identifiable, Decodable {
         case feedbackType
         case explanation
         case concept
+        case definition
     }
 }
 
